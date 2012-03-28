@@ -5,6 +5,8 @@
 a2dissite default
 a2ensite bootstrap-wordpress
 
+a2enmod rewrite
+
 /etc/init.d/apache2 restart
 
 ## configure nginx
