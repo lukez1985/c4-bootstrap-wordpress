@@ -1,4 +1,4 @@
-#c4-bootstrap-worpress
+#c4-bootstrap-wordpress
 
 Using the c4-bootstrap system for lightweight system setup c4-bootstrap-wordpress provides a quick way to install a fresh copy of wordpress and even allows you to pull changes back into your git repo making rebuilding a server and restoring your site simple.
 
