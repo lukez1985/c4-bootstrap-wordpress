@@ -37,6 +37,10 @@ You'll see lots of text fly past the screen as the system is setup. Once complet
 
 If you have never run repack.sh when you browse to your URL/IP you'll see the initial setup screen for wordpress. If you've been using repack.sh to track your changes in github then your site will be fully restored and running when you browse to your URL.
 
+###Installing extra plugins
+
+This script now supports automatically installing third part plugins on bootstrap. To add your plugins to the list just edit __scripts/post.d/plugins__ and put a new URL on a new line.
+
 ##HOWTO c4-repack
 
 As you use wordpress the contents of the site may change and so too will the DB. repack.sh is designed to help you track those changes in github.
