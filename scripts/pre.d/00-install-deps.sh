@@ -5,7 +5,7 @@
 apt-get update
 
 echo "installing apache and php5"
-apt-get install -y apache2 php5 php5-mysql php-apc php5-memcached
+apt-get install -y apache2 php5 php5-mysql php-apc php5-memcached php5-gd
 
 ## Stop apache from running so we can configure it
 
