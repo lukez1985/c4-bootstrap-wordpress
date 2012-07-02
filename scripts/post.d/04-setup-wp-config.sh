@@ -17,7 +17,15 @@ curl https://api.wordpress.org/secret-key/1.1/salt/ >> /var/www/wordpress/wp-con
 sed -i s/database_name_here/bootstrapwp/ /var/www/wordpress/wp-config.php
 sed -i s/username_here/bootstrap_user/ /var/www/wordpress/wp-config.php
 
+# add support to change URL of site
+
+echo " "  >> /var/www/wordpress/wp-config.php
+echo "#Change this to your URL if you are moving the site from a temp URL to a final URL"  >> /var/www/wordpress/wp-config.php
+echo "#define('WP_HOME','http://example.com');"  >> /var/www/wordpress/wp-config.php
+echo "#define('WP_SITEURL','http://example.com');"  >> /var/www/wordpress/wp-config.php
+
 # really nasty hack to fix no permission error if this is not the last line of the config
+echo " "  >> /var/www/wordpress/wp-config.php
 echo "@require_once(ABSPATH . 'wp-settings.php');" >> /var/www/wordpress/wp-config.php
 
 # generate new password

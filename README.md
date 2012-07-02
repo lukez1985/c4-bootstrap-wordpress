@@ -25,7 +25,7 @@ Fire up your Ubuntu server or EC2 instance. These scripts are designed to work o
 
 Now fork this git repo and clone onto your new server:
 
-    First click the fork button on the c4-bootstrap-wordpress github page
+    First click the fork button on the c4-bootstrap-wordpress github page (you'll need your own github account)
 
 On your new server:
 
@@ -39,7 +39,11 @@ If you have never run repack.sh when you browse to your URL/IP you'll see the in
 
 ###Installing extra plugins
 
-This script now supports automatically installing third part plugins on bootstrap. To add your plugins to the list just edit __scripts/post.d/plugins__ and put a new URL on a new line.
+This script now supports automatically installing third part plugins on bootstrap. To add your plugins to the list just edit __scripts/post.d/plugins__ and put a new URL on a new line. There is an example file included in this repo.
+
+###Installing themes from wordpress.org
+
+This script now supports automatically installing third part themes from wordpress.org on bootstrap. To add your themes to the list just edit __scripts/post.d/themess__ and put a new URL on a new line. There is an example file included in this repo.
 
 ##HOWTO c4-repack
 
