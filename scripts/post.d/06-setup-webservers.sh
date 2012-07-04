@@ -14,8 +14,8 @@ a2enmod rewrite
 rm /etc/nginx/sites-enabled/*
 ln -s /etc/nginx/sites-available/bootstrap-wordpress /etc/nginx/sites-enabled/
 
-mkdir -p /mnt/nginx/cache
-mkdir -p /mnt/nginx/proxy
-chown -Rf www-data.www-data /mnt/nginx
+mkdir -p /mnt/www/cache
+mkdir -p /mnt/www/logs
+chown -Rf www-data.www-data /mnt/www
 
 /etc/init.d/nginx restart
